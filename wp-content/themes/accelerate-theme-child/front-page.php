@@ -35,7 +35,7 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
-	<!-- Skillcrush WP #203 class lesson -->
+	<!-- Skillcrush WP #203 class lessons -->
 	<section class="recent-posts">
  		<div class="site-content">
 			<div class="blog-post">
