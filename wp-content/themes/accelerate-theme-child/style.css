@@ -26,6 +26,7 @@ Text Domain:  accelerate-theme-child
 /* WP #203 front page changes */
 .site-content>h4 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 ul {
@@ -40,6 +41,7 @@ li.individual-featured-work {
 
 .individual-featured-work>h3 {
     text-align: center;
+    font-weight: 500;
 }
 
 
