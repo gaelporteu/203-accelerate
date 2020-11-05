@@ -84,3 +84,9 @@ div.case-study-images {
 	float: left;
 	width: 600px;
 }
+
+div.case-study-images>img {
+    float: left;
+    width: 600px;
+    margin: 40px 0;
+}
