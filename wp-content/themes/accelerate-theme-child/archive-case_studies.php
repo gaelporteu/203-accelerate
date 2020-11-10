@@ -12,20 +12,21 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
+        <?php query_posts('order=ASC&post_type=case_studies'); ?>
             <?php while ( have_posts() ) : the_post(); 
                 $image_1 = get_field('image_1');
                 $size = "full";
                 $services = get_field('services');
             ?>
 
-            <article class="case-study">
+            <article class="case-study sidebar">
     			<aside class="case-study-sidebar">
         			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        			<h5><?php echo $services; ?></h5>
+        			<h5><a href="<?php the_permalink(); ?>"><?php echo $services; ?></a></h5>
 
-					<?php the_excerpt(); ?>
+					<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
 
-					<p><strong><a href="<?php the_permalink(); ?>">View Project</a></strong></p>
+					<p><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></p>
     			</aside>
     
     			<div class="case-study-images">
