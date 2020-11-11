@@ -129,3 +129,44 @@ div.case-study-images>img {
     margin-left: 10px;
     padding: 6px;
 }
+
+/* wp #203 Contact Us page */
+
+.ninja-forms-req-symbol {
+    display: none;
+}
+
+.nf-form-fields-required {
+    display: none;
+}
+
+.main-content {
+    max-width: 615px;
+    margin: 0 auto;
+}
+
+.wp-block-table {
+    margin-bottom: 50px;
+}
+
+#nf-field-3-wrap {
+    margin-top: 35px;
+}
+
+.nf-field-element {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input#nf-field-4.ninja-forms-field {
+    margin-top: 35px;
+    background: none repeat scroll 0 0 #45ac9d;
+    font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+    color: #fff;
+    padding: 1em 3.75em;
+    text-align: center;
+}
+
+.nf-field-label {
+    font-size: .85em;
+}
