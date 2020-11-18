@@ -170,3 +170,77 @@ input#nf-field-4.ninja-forms-field {
 .nf-field-label {
     font-size: .85em;
 }
+
+/* About us page */
+
+.page-id-47377 .hero-content {
+    max-height: 290px;
+    padding: 80px 0;
+}
+
+.page-id-47377 .main-content {
+    width: 700px;;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.page-id-47377 .main-content p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page-id-47377 .heading {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-id-47377 h4 {
+    text-transform: uppercase;
+}
+
+ul.about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+li.individual-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.page-id-47377 figure {
+    
+}
+
+.individual-services div {
+    width: 70%;
+    align-self: flex-start;
+}
+
+.individual-services h3 {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+li.individual-services:nth-child(even) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.individual-services:nth-child(4) {
+    margin-bottom: 100px;
+}
+
+.page-id-47377 .container {
+    border-top: 1px solid #bfbfbf;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-size: 1.2em;
+}
