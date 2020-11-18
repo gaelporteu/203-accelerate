@@ -244,3 +244,26 @@ li.individual-services:nth-child(even) {
     align-items: baseline;
     font-size: 1.2em;
 }
+
+/* 404 page  */
+
+.container-404 {
+    display: flex;
+    width: 960px;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div h1, div p {
+    margin-left: 25px;
+}
+
+div h1 {
+    color: #45ac9d;
+}
+
+div p span {
+    color: #45ac9d;
+    font-weight: 900;
+}
