@@ -252,7 +252,7 @@ li.individual-services:nth-child(even) {
     width: 960px;
     margin: 50px auto;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .container-404 div {
@@ -266,6 +266,9 @@ div h1, div p {
 div h1 {
     color: #45ac9d;
     margin-top: 0;
+    font-family: 'Diplomata', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 2em;
+    line-height: 1em;
 }
 
 div p span {

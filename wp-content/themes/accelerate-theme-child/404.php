@@ -13,7 +13,7 @@ get_header(); ?>
         <img src="/wp-content/themes/accelerate-theme-child/img/404-icon.png" alt="Missed Target">
     </figure>
     <div>
-        <h1>Whoops, Missed the target…</h1>
+        <h1>Whoops, <br>Missed the target…</h1>
         <p>Sorry, this page no longer exists, never existed or has been moved. We feel like complete jerks for totally misleading you.</p>
         <p>Feel free to take a look around our <span><a href="<?php echo site_url('/blog/') ?>">blog</a></span> or some of our featured <span><a href="<?php echo site_url('/case-studies/') ?>">work</a></span>.</p>
     </div>
