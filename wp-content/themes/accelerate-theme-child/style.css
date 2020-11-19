@@ -42,8 +42,8 @@ li.individual-featured-work {
 .individual-featured-work>h3 {
     text-align: center;
     font-weight: 500;
+    margin: 0 0 30px 0;
 }
-
 
 /* WP #203 lesson */
 .blog-post {
@@ -60,9 +60,24 @@ li.individual-featured-work {
     margin: 2em 0 .5em;
 }
 
-/* WP #203 lesson */
+/* WP #203 lesson front page blog and twitter widget*/
+.recent-items .site-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .blog-post h3 {
-	font-size: 1.5em;
+    font-size: 1.5em;
+    margin: 30px 0 30px 0;
+}
+
+.ctf-item {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.blog-post {
+    flex: 0 1 47%;
 }
 
 /* WP #203 lesson */
@@ -70,7 +85,8 @@ li.individual-featured-work {
 	font-family: 'Montserrat';
 	font-weight: 700;
 	color: #45ac9d;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: .9em;
 }
 
 /* wp 203 Case studies */
@@ -127,7 +143,11 @@ div.case-study-images>img {
     color: #fff;
     border-radius: 50%;
     margin-left: 10px;
-    padding: 6px;
+    padding: 3px;
+}
+
+.site-footer p {
+    margin-left: 0;
 }
 
 /* wp #203 Contact Us page */
@@ -211,10 +231,6 @@ li.individual-services {
     margin-top: 50px;
 }
 
-.page-id-47377 figure {
-    
-}
-
 .individual-services div {
     width: 70%;
     align-self: flex-start;
@@ -259,11 +275,7 @@ li.individual-services:nth-child(even) {
     align-self: flex-start;
 }
 
-div h1, div p {
-    margin-left: 25px;
-}
-
-div h1 {
+.error404 div h1 {
     color: #45ac9d;
     margin-top: 0;
     font-family: 'Diplomata', 'Montserrat', 'Open Sans', Arial, sans-serif;
@@ -271,7 +283,12 @@ div h1 {
     line-height: 1em;
 }
 
-div p span {
+.error404 div p span {
     color: #45ac9d;
     font-weight: 900;
+}
+
+/* WP #203 Blog Page */
+.entry-time {
+    text-transform: uppercase;
 }
