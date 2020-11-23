@@ -292,3 +292,34 @@ li.individual-services:nth-child(even) {
 .entry-time {
     text-transform: uppercase;
 }
+
+
+.widget_mailchimp input[type="submit"] {
+	font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+	background: #45ac9d;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.widget_mailchimp input {
+    width: 100%;
+    font: .875em/1.75em 'Open Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.widget_mailchimp label {
+    color: #3b3b3b;
+    font: 600 .875em/1.5 'Open Sans', Arial, sans-serif;
+}
+
+/* WP #203 Share Icons */
+
+.case-study-sidebar div[style].sfsi_responsive_icons  {
+    width: 95% !important;
+}
