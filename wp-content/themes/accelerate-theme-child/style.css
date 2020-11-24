@@ -89,6 +89,18 @@ li.individual-featured-work {
     font-size: .9em;
 }
 
+/* WP #203 Advanced Front Page feature */
+
+ul.front-about-us {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.front-about-us li.individual-services {
+    display: flex;
+    flex-direction: column;
+} 
+
 /* wp 203 Case studies */
 
 aside.case-study-sidebar {
@@ -219,35 +231,35 @@ input#nf-field-4.ninja-forms-field {
     text-transform: uppercase;
 }
 
-ul.about-us {
+.page-id-47377 ul.about-us {
     display: flex;
     flex-direction: column;
 }
 
-li.individual-services {
+.page-id-47377 li.individual-services {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
 }
 
-.individual-services div {
+.page-id-47377 .individual-services div {
     width: 70%;
     align-self: flex-start;
 }
 
-.individual-services h3 {
+.page-id-47377 .individual-services h3 {
     font-weight: normal;
     font-size: 1.4em;
 }
 
-li.individual-services:nth-child(even) {
+.page-id-47377 li.individual-services:nth-child(even) {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
 
-.individual-services:nth-child(4) {
+.page-id-47377 .individual-services:nth-child(4) {
     margin-bottom: 100px;
 }
 

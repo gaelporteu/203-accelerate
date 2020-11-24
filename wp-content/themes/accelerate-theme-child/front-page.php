@@ -17,12 +17,6 @@ get_header(); ?>
 	<pre><?php 
 		// print_r($wp_query); exit; 
 	?></pre>
-
-
-	<!-- Skillcrush request to id all posts -->
-	<pre><?php 
-		// print_r($wp_query->posts); exit; 
-	?></pre>
 	
 
 	
@@ -35,6 +29,7 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
+	<!-- WP#203 Adding Featured work section -->
 	<section class="featured-work">
 		<div class="site-content">
 			<h4>Featured Work</h4>
@@ -57,6 +52,69 @@ get_header(); ?>
 			</ul>
 		</div>
 	</section>
+
+	<!-- #WP 203 Our Services section advanced -->
+	<section class="our-services">
+		<div class="site-content">
+			<h4>Our Services</h4>
+
+			<ul class="front-about-us">
+			<?php query_posts('page=about'); ?>
+				<?php while ( have_posts() ) : the_post(); 
+					$size = "medium";
+					$image_1 = get_field("image_1");
+					$subhead_1 = get_field("subhead_1");
+					$image_2 = get_field("image_2");
+					$subhead_2 = get_field("subhead_2");
+					$image_3 = get_field("image_3");
+					$subhead_3 = get_field("subhead_3");
+					$image_4 = get_field("image_4");
+					$subhead_4 = get_field("subhead_4");
+				?>
+				<li class="individual-services">
+					<figure>
+						<?php echo wp_get_attachment_image($image_1, $size); ?>
+					</figure>
+					<div>
+						<h3><?php echo $subhead_1 ?></h3>
+						
+					</div>	
+				</li>
+				<li class="individual-services">
+					<figure>
+						<?php echo wp_get_attachment_image($image_2, $size); ?>
+					</figure>
+					<div>
+						<h3><?php echo $subhead_2 ?></h3>
+						
+					</div>	
+				</li>
+				<li class="individual-services">
+					<figure>
+						<?php echo wp_get_attachment_image($image_3, $size); ?>
+					</figure>
+					<div>
+						<h3><?php echo $subhead_3 ?></h3>
+						
+					</div>	
+				</li>
+				<li class="individual-services">
+					<figure>
+						<?php echo wp_get_attachment_image($image_4, $size); ?>
+					</figure>
+					<div>
+						<h3><?php echo $subhead_4 ?></h3>
+						
+					</div>	
+				</li>
+       		
+				<?php endwhile; // end of the loop ?> 
+				<?php wp_reset_query(); // resets the altered query back to the original ?>
+			</ul>
+
+		</div>
+	</section>
+
 
 	<!-- Skillcrush WP #203 class lessons -->
 	<section class="recent-items">
