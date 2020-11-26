@@ -52,7 +52,7 @@ ul.front-about-us {
     justify-content: space-between;
 }
 
-li.individual-services {
+.font-about-us li.individual-services {
     display: flex;
     flex-direction: column;
     align-items: center;
