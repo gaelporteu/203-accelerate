@@ -59,7 +59,7 @@ get_header(); ?>
 			<h4>Our Services</h4>
 
 			<ul class="front-about-us">
-			<?php query_posts('page=about'); ?>
+			<?php query_posts('pagename=about'); ?>
 				<?php while ( have_posts() ) : the_post(); 
 					$size = "medium";
 					$image_1 = get_field("image_1");
@@ -75,37 +75,25 @@ get_header(); ?>
 					<figure>
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
 					</figure>
-					<div>
-						<h3><?php echo $subhead_1 ?></h3>
-						
-					</div>	
+					<h3><?php echo $subhead_1 ?></h3>
 				</li>
 				<li class="individual-services">
 					<figure>
 						<?php echo wp_get_attachment_image($image_2, $size); ?>
 					</figure>
-					<div>
-						<h3><?php echo $subhead_2 ?></h3>
-						
-					</div>	
+					<h3><?php echo $subhead_2 ?></h3>
 				</li>
 				<li class="individual-services">
 					<figure>
 						<?php echo wp_get_attachment_image($image_3, $size); ?>
 					</figure>
-					<div>
-						<h3><?php echo $subhead_3 ?></h3>
-						
-					</div>	
+					<h3><?php echo $subhead_3 ?></h3>
 				</li>
 				<li class="individual-services">
 					<figure>
 						<?php echo wp_get_attachment_image($image_4, $size); ?>
 					</figure>
-					<div>
-						<h3><?php echo $subhead_4 ?></h3>
-						
-					</div>	
+					<h3><?php echo $subhead_4 ?></h3>
 				</li>
        		
 				<?php endwhile; // end of the loop ?> 
