@@ -28,6 +28,7 @@ Text Domain:  accelerate-theme-child
 .site-content > h4 {
   text-align: center;
   text-transform: uppercase;
+  margin-top: 4em;
 }
 
 ul {
@@ -74,9 +75,8 @@ ul.front-about-us {
 
 /* WP #203 lesson */
 .blog-post {
-  width: 50%;
-  float: left;
   margin-bottom: 2em;
+  flex: 0 1 47%;
 }
 
 /* WP #203 lesson */
@@ -84,7 +84,7 @@ ul.front-about-us {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
-  margin: 2em 0 0.5em;
+  margin: 5em 0 0.5em;
 }
 
 /* WP #203 lesson front page blog and twitter widget*/
@@ -101,10 +101,6 @@ ul.front-about-us {
 .ctf-item {
   padding: 0 !important;
   margin: 0 !important;
-}
-
-.blog-post {
-  flex: 0 1 47%;
 }
 
 /* WP #203 lesson */
@@ -384,5 +380,18 @@ input#nf-field-4.ninja-forms-field {
     flex-grow: 2;
     flex-basis: 50%;
     max-width: 48%;
+  }
+
+  .recent-items .site-content {
+    flex-direction: column;
+  }
+
+  .site-description:last-of-type p {
+    display: inline-block;
+  }
+
+  .social-media-navigation {
+    position: relative;
+    bottom: 30px;
   }
 }

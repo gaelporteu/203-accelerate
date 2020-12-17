@@ -22,7 +22,7 @@ get_header(); ?>
 			?>
 			
 			<article class="case-study">
-    			<aside class="case-study-sidebar">
+    			<aside class="case-study-sidebar animate__animated animate__fadeInLeft">
         			<h2><?php the_title(); ?></h2>
         			<h5><?php echo $services; ?></h5>
         			<h6>Client: <?php echo $client; ?></h6>
@@ -30,7 +30,7 @@ get_header(); ?>
 					<p><strong><a href="<?php echo $link; ?>">Site Link</a></strong></p>
     			</aside>
     
-    			<div class="case-study-images">
+    			<div class="case-study-images animate__animated animate__fadeInRight">
 					<?php if($image_1) {
 						echo wp_get_attachment_image( $image_1, $size );
 					} ?>

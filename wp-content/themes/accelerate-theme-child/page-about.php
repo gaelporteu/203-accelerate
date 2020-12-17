@@ -44,7 +44,7 @@ get_header(); ?>
 					$subhead_4 = get_field("subhead_4");
 					$services_4 = get_field("services_4");
 				?>
-				<li class="individual-services">
+				<li class="individual-services animate__animated animate__slideInRight">
 					<figure>
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
 					</figure>
@@ -53,7 +53,7 @@ get_header(); ?>
 						<p><?php echo $services_1 ?></p>
 					</div>	
 				</li>
-				<li class="individual-services">
+				<li class="individual-services animate__animated animate__slideInLeft">
 					<figure>
 						<?php echo wp_get_attachment_image($image_2, $size); ?>
 					</figure>
@@ -62,7 +62,7 @@ get_header(); ?>
 						<p><?php echo $services_2 ?></p>
 					</div>	
 				</li>
-				<li class="individual-services">
+				<li class="individual-services animate__animated animate__slideInRight">
 					<figure>
 						<?php echo wp_get_attachment_image($image_3, $size); ?>
 					</figure>
@@ -71,7 +71,7 @@ get_header(); ?>
 						<p><?php echo $services_3 ?></p>
 					</div>	
 				</li>
-				<li class="individual-services">
+				<li class="individual-services animate__animated animate__slideInLeft">
 					<figure>
 						<?php echo wp_get_attachment_image($image_4, $size); ?>
 					</figure>

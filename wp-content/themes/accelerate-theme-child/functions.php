@@ -7,13 +7,14 @@
 *
 * @package WordPress
 * @subpackage Accelerate Marketing
-* @since Accelerate Marketing 2.0
+* @since Accelerate Marketing 2.1
 */
 
 // Enqueue scripts and styles
 function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+    wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' );
     wp_enqueue_style( 'accelerat-child-google-fonts', '//fonts.googleapis.com/css2?family=Diplomata&display=swap' );
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );

@@ -31,10 +31,10 @@ get_header(); ?>
 
 	<!-- WP#203 Adding Featured work section -->
 	<section class="featured-work">
-		<div class="site-content">
+		<div class="site-content animate__animated animate__fadeIn">
 			<h4>Featured Work</h4>
 
-			<ul class="homepage-featured-work">
+			<ul class="homepage-featured-work animate__animated animate__fadeIn">
 				<?php query_posts('order=ASC&posts_per_page=3&post_type=case_studies'); ?>
 					<?php while ( have_posts() ) : the_post(); 
 						$image_1 = get_field("image_1");
@@ -55,7 +55,7 @@ get_header(); ?>
 
 	<!-- #WP 203 Our Services section advanced -->
 	<section class="our-services">
-		<div class="site-content">
+		<div class="site-content animate__animated animate__bounceIn animate__delay-1s">
 			<h4>Our Services</h4>
 
 			<ul class="front-about-us">
@@ -107,7 +107,7 @@ get_header(); ?>
 	<!-- Skillcrush WP #203 class lessons -->
 	<section class="recent-items">
  		<div class="site-content">
-			<div class="blog-post">
+			<div class="blog-post animate__animated animate__bounceInUp animate__delay-1s">
 				<h4>From the Blog</h4>
 				<?php query_posts('posts_per_page=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -117,7 +117,7 @@ get_header(); ?>
 				<?php wp_reset_query(); ?>
 			</div>
 			 <!-- Skillcrush WP #203 add twitter widget -->
-			<div class="blog-post">
+			<div class="blog-post animate__animated animate__bounceInUp animate__delay-2s">
 				<h4>Recent Tweet</h4>
 				<h3>@GPorteu</h3>
 				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
