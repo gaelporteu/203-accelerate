@@ -360,7 +360,18 @@ input#nf-field-4.ninja-forms-field {
 
 /* Mobile media queries */
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-item {
+    align-self: center;
+  }
+
   ul.homepage-featured-work {
     flex-direction: column;
     justify-content: center;
@@ -377,9 +388,12 @@ input#nf-field-4.ninja-forms-field {
   }
 
   .front-about-us .individual-services {
+    display: flex;
     flex-grow: 2;
     flex-basis: 50%;
     max-width: 48%;
+    justify-content: center;
+    align-items: center;
   }
 
   .recent-items .site-content {
@@ -393,5 +407,35 @@ input#nf-field-4.ninja-forms-field {
   .social-media-navigation {
     position: relative;
     bottom: 30px;
+  }
+
+  /* Mobile changes for case-study-sidebar and archives */
+  aside.case-study-sidebar {
+    width: 100%;
+  }
+
+  /* Mobile About us page */
+  .page-id-47377 .main-content p {
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  .page-id-47377 li.individual-services {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .page-id-47377 li.individual-services:nth-child(even) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .page-id-47377 .individual-services div {
+    text-align: center;
+    align-self: center;
+  }
+
+  .page-id-47377 .contact-us {
+    display: none;
   }
 }
