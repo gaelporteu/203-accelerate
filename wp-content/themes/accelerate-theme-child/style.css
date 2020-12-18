@@ -415,9 +415,13 @@ input#nf-field-4.ninja-forms-field {
   }
 
   /* Mobile About us page */
-  .page-id-47377 .main-content p {
-    overflow: hidden;
+  .page-id-47377 .hero-content {
     padding: 5px;
+  }
+
+  .page-id-47377 .main-content {
+    width: 90vw;
+    padding: 15px 25px;
   }
 
   .page-id-47377 li.individual-services {
